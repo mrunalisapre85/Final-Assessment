@@ -1,1 +1,223 @@
+import yfinance as yf
+ticker = yf.Ticker("TSLA")
+history = ticker.history(period="1d")
+print(history)
+import pandas as pd
+ticker = yf.Ticker("TSLA")
+tesla_data = ticker.history(period="max")
+print(tesla_data)
+tesla_data.reset_index(inplace=True)
+print(tesla_data.head())
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+response = request.get(url)
+import yfinance as yf
+import pandas
+ticker = yf.Ticker("TSLA")
+history = ticker.history(period="1d")
+print(history)
+import pandas as pd
+ticker = yf.Ticker("TSLA")
+tesla_data = ticker.history(period="max")
+print(tesla_data)
+tesla_data.reset_index(inplace=True)
+print(tesla_data.head())
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+response = requests.get(url)
+import requests
+response = requests.get(url)
+
+html_data = response.text
+print(html_data)
+import requests
+from bs4 import BeautifulSoup
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+response = requests.get(url)
+
+html_data = response.content
+soup = BeautifulSoup(html_data, 'html.parser')
+
+title = soup.title.string
+print("Page Title:", title)
+
+rows = soup.find_all('tr')
+for row in rows:
+    print(row)
+soup.find_all("tbody")[1]
+import requests
+from bs4 import BeautifulSoup
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+response = requests.get(url)
+
+html_data = response.content
+soup = BeautifulSoup(html_data, 'html.parser')
+
+second_tbody = soup.find_all("tbody")[1]
+
+columns = row.find_all("td")
+columns = row.find_all("tr")
+ columns = row.find_all("td")
+revenue_column = columns
+import requests
+from bs4 import BeautifulSoup
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+response = requests.get(url)
+html_data = response.content
+soup = BeautifulSoup(html_data, 'html.parser')
+tbody_elements = soup.find_all("tbody")
+second_tbody = tbody_elements[1]
+columns = row.find_all("td")
+revenue_column = columns
+tbody_elements = soup.find_all("tbody")
+second_tbody = tbody_elements[1]
+
+columns = row.find_all("td")
+print("Desired tbody element does not exist in the HTML data.")
+
+ print("Desired tbody element does not exist in the HTML data.")
+
+import tesla_revenue
+pip dataframe
+tesla_data
+import yfinance as yf
+
+gme = yf.Ticker("GME")
+gme_data = gme.history(period="max")
+gme_data.reset_index(inplace=True)
+print(gme_data.head(5))
+
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/stock.html"
+response = requests.get(url)
+html_data = response.text
+
+pip install beautifulsoup4
+soup = BeautifulSoup(html_data, 'html.parser')
+
+soup.find_all("tbody")[1]
+soup = BeautifulSoup(html_data, 'html.parser')
+me_revenue_data = pd.DataFrame({
+    'Date': ['2021-01-01', '2021-02-01', '2021-03-01', '2021-04-01', '2021-05-01'],
+    'Revenue': [1000000, 1500000, 1200000, 1800000, 2000000]
+})
+import pandas as pd
+me_revenue_data = pd.DataFrame({
+    'Date': ['2021-01-01', '2021-02-01', '2021-03-01', '2021-04-01', '2021-05-01'],
+    'Revenue': [1000000, 1500000, 1200000, 1800000, 2000000]
+})
+import pandas as pd
+gme_revenue_data = {
+    'Date': ['2021-01-01', '2021-02-01', '2021-03-01', '2021-04-01', '2021-05-01'],
+    'Revenue': [1000000, 1500000, 1200000, 1800000, 2000000]
+}
+gme_revenue = pd.DataFrame(gme_revenue_data)
+
+last_five_rows = gme_revenue.tail(5)
+print(last_five_rows)
+
+import pandas as pd
+import matplotlib.pyplot as plt
+pip install matplotlib
+import matplotlib.pyplot as plt
+def make_graph(stock_data, revenue_data, title):plt.figure(figsize=(12, 6))
+import matplotlib.pyplot as plt
+def make_graph(stock_data, revenue_data, title):make_graph(tesla_data, tesla_revenue, 'Tesla')
+import matplotlib.pyplot as plt
+
+def make_graph(data, revenue, title):dates = [entry['date'] for entry in data[:len(data)//2]]
+    # Extracting the date and closing pr
+tesla_data = [...]  # Replace [...] with actual Tesla stock data
+tesla_revenue = [...]  # Replace [...] with actual Tesla revenue data
+make_graph(tesla_data, tesla_revenue, 'Tesla')
+plt.show()
+import matplotlib.pyplot as plt
+def make_graph(data, revenue, title): dates = [entry['date'] for entry in data]
+def make_graph(data, revenue, title):closing_prices = [entry['close'] for entry in data]
+ plt.figure(figsize=(12, 6))
+plt.xlabel('Date')
+plt.ylabel('Closing Price')
+plt.title(title + ' Stock Data')
+plt.show()
+me_data = [...]  # Replace [...] with actual GameStop stock data
+gme_revenue = [...]  # Replace [...] with actual GameStop revenue data
+gme_data = [...]  # Replace [...] with actual GameStop stock data
+gme_revenue = [...]  # Replace [...] with actual GameStop revenue data
+import matplotlib.pyplot as plt
+def make_graph(data, revenue, title):dates = [entry[0] for entry in data]
+def make_graph(data, revenue, title):closing_prices = [entry[1] for entry in data]
+
+plt.figure(figsize=(12, 6))
+plt.xlabel('Date')
+ plt.ylabel('Closing Price')
+plt.title(title + ' Stock Data')
+plt.show()
+gme_data = [...]  # Replace [...] with actual GameStop stock data
+gme_revenue = [...]  # Replace [...] with actual GameStop revenue data
+plt.plot(dates, closing_prices)
+from datetime import date
+
+my_date = date(2022, 1, 15)
+print(my_date)  # Output: 2022-01-15
+
+current_date = date.today()
+print(current_date)  # Output: current date in the format YYYY-MM-DD
+
+import Gamestop Stock
+pip install GameStop Stock
+import matplotlib.pyplot as plt
+
+def make_graph(data, revenue, title):dates = [entry[0] for entry in data]
+def make_graph(data, revenue, title): closing_prices = [entry[1] for entry in data]
+plt.figure(figsize=(12, 6))
+my_date = date(2022, 1, 15)
+print(my_date)  # Output: 2022-01-15
+current_date = date.today()
+print(current_date)
+ plt.show()
+gme_data = [...]  # Replace [...] with actual GameStop stock data
+gme_revenue = [...]  # Replace [...] with actual GameStop revenue data
+import pandas as pd
+import pandas as pd
+tesla_data = [...]
+import pandas as pd
+tesla_data = [
+    {'Date': '2021-01-01', 'Open': 705.67, 'Close': 729.77, 'High': 735.86, 'Low': 699.56, 'Volume': 500000},
+    {'Date': '2021-01-02', 'Open': 740.00, 'Close': 745.00, 'High': 746.00, 'Low': 718.00, 'Volume': 600000},
+    # ... more data ...
+]
+tesla_df = pd.DataFrame(tesla_data)
+
+tesla_df['Date'] = pd.to_datetime(tesla_df['Date'])
+filtered_tesla_df = tesla_df[tesla_df['Date'] <= pd.to_datetime('2021-06-30')]
+make_graph(filtered_tesla_df, tesla_revenue, 'Tesla')
+import pandas as pd
+
+data = {'Date': ['2021-01-01', '2021-01-02', '2021-01-03'],
+        'Open': [100, 110, 105],
+        'Close': [120, 125, 115],
+        'High': [130, 135, 125],
+        'Low': [95, 100, 95],
+        'Volume': [1000, 2000, 1500]}
+df = pd.DataFrame(data)
+
+import pandas as pd
+import pandas as pd
+
+gme_data = [
+    {'Date': '2021-01-01', 'Open': 100, 'Close': 120, 'High': 130, 'Low': 95, 'Volume': 1000},
+    {'Date': '2021-01-02', 'Open': 110, 'Close': 125, 'High': 135, 'Low': 100, 'Volume': 2000},
+    {'Date': '2021-01-03', 'Open': 105, 'Close': 115, 'High': 125, 'Low': 95, 'Volume': 1500}
+]
+gme_data_df = pd.DataFrame(gme_data)
+import pandas as pd
+
+gme_data = [
+    {'Date': '2021-01-01', 'Open': 100, 'Close': 120, 'High': 130, 'Low': 95, 'Volume': 1000},
+    {'Date': '2021-01-02', 'Open': 110, 'Close': 125, 'High': 135, 'Low': 100, 'Volume': 2000},
+    {'Date': '2021-01-03', 'Open': 105, 'Close': 115, 'High': 125, 'Low': 95, 'Volume': 1500}
+]
+gme_data_df = pd.DataFrame(gme_data)
+gme_data_df['Date'] = pd.to_datetime(gme_data_df['Date'])
+filtered_gme_data = gme_data_df[gme_data_df['Date'] <= pd.to_datetime('2021-06-30')]
+print(filtered_gme_data)
 
